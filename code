@@ -1,0 +1,34 @@
+import time
+import random
+
+def start_game():
+    print("Welcome to Simple Shooter Game!")
+    time.sleep(1)
+
+def play_game():
+    print("You are in the game! Pew pew pew!")
+
+def exit_game():
+    print("Exiting the game. Goodbye!")
+
+def main_menu():
+    while True:
+        print("\nMain Menu:")
+        print("1. Start Game")
+        print("2. Play Game")
+        print("3. Exit")
+
+        choice = input("Enter your choice (1/2/3): ")
+
+        if choice == '1':
+            start_game()
+        elif choice == '2':
+            play_game()
+        elif choice == '3':
+            exit_game()
+            break
+        else:
+            print("Invalid choice. Please enter 1, 2, or 3.")
+
+if __name__ == "__main__":
+    main_menu()
